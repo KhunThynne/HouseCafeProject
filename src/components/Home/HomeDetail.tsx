@@ -1,18 +1,25 @@
 "use client";
 
 import { Button } from "@material-tailwind/react";
+import { useEffect } from "react";
 export default function HomeDetail() {
-    localStorage.setItem("test","D")
-    const theme = {
-        component: {
-        
-          styles: {color:"white"} 
-        }
-      }
-    return (
-        <div>
-            {/* eslint-disable-next-line */}
-            <Button className="bg-[#aa1414]" onClick={()=>{}}>A simple alert for showing message.</Button>
-        </div>
-    );
+
+
+  useEffect(() => {
+    localStorage.setItem("test", "D")
+  }, [])
+
+  const theme = {
+    component: {
+
+      styles: { color: "white" }
+    }
+  }
+  return (
+
+    <div className="flex justify-center ">
+      Layout storage
+    </div>
+
+  );
 }

@@ -1,0 +1,13 @@
+@tailwind components;
+
+
+@layer components {
+
+
+    .bg-primary *,
+    .bg-danger * {
+        @apply text-white
+    }
+
+
+}
