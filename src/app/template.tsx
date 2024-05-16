@@ -1,12 +1,10 @@
 "use client";
 
-import HomeDetail from "@/components/Home/HomeDetail";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@material-tailwind/react";
-import Container from "@/components/Container";
-
 import { Suspense } from "react";
 import GridLayout from "@/components/GridLayout";
+import MainContent from "@/components/MainContent";
 
 export default function Template({ children }: { children: React.ReactNode }) {
     const customTheme = "light"
@@ -23,7 +21,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
             <GridLayout>
                 <Navbar />
-                <Container className=" ">{children}</Container>
+                <MainContent className=" ">{children}</MainContent>
 
 
             </GridLayout>

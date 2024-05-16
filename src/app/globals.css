@@ -31,14 +31,38 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
-@layer base {}
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  h4 {
+    @apply text-base;
+  }
+
+  h5 {
+    @apply text-sm;
+  }
+
+  h6 {
+    @apply text-xs;
+  }
+}
 
 @layer components {
 
   /* .test {
     @apply text-primary
   } */
-  
+
 }
 
 @layer utilities {
@@ -46,6 +70,22 @@ body {
     text-wrap: balance;
   }
 
+  /* Not found */
+  .Not-Found {
+
+    @apply flex h-full justify-center items-center;
+  }
+
+  .Not-Found * {
+    @apply text-primary text-[4vw] lg:text-[3vw];
+  }
+
+  /* special screen   screen < xs = True */
+  @media screen(xs) {
+    body * {
+      font-size: calc(8vw);
+    }
+  }
 
   /*  Set theme */
   /* .bg-primary {
