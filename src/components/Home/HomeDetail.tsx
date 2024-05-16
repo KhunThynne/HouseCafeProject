@@ -17,9 +17,7 @@ export default function HomeDetail() {
   }
   return (
 
-    <div className="flex justify-center ">
-      Layout storage
-    </div>
+<></>
 
   );
 }

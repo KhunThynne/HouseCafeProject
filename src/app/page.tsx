@@ -8,10 +8,12 @@ export default function Home() {
 
 
   return (
-    <div className="bg-danger">
-      <text className="test"> Test </text>
-      <HomeDetail />
+
+    <div className="flex justify-center ">
+      <span>       Layout storage  </span>
 
     </div>
+
+
   );
 }

@@ -52,7 +52,7 @@ const config: Config = withMT({
           DEFAULT: "#fff"
         },
         'danger': {
-          DEFAULT: "#ad2a2a"
+          DEFAULT: "#f71b1b"
         },
         'warning': {
           DEFAULT: ""

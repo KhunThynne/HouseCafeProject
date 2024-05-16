@@ -2,7 +2,7 @@
 
 export default function Navbar() {
     return (
-        <nav className="bg-primary flex justify-center items-center">
+        <nav className="sticky  top-0 bg-primary flex justify-center items-center ">
             <span className=""> Navbar</span>
 
 

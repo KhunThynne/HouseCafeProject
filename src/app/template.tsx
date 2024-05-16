@@ -1,7 +1,7 @@
 "use client";
 
 import HomeDetail from "@/components/Home/HomeDetail";
-import Navbar from "@/components/Root/Navbar";
+import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@material-tailwind/react";
 import Container from "@/components/Container";
 
@@ -19,9 +19,11 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 <div className="row-start-2 row-end-4 bg-white"> <div > </div> </div>
             </div>
  */}
+
+
             <GridLayout>
                 <Navbar />
-                <Container className="  border">{children}</Container>
+                <Container className=" ">{children}</Container>
 
 
             </GridLayout>
