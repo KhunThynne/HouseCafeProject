@@ -1,5 +1,6 @@
 "use client"
 
+import CarouselSlide from "@/components/CarouselSlide/CarouselSlide";
 import { Button } from "@material-tailwind/react";
 import { useRouter } from "next/navigation"
 
@@ -15,8 +16,19 @@ import { useRouter } from "next/navigation"
 export default function Abverties() {
 
     const router = useRouter();
-    return <div className="flex gap-2 self-start border Abverties">
-        Abverties
+    return <div className=" gap-2  Abverties border p-2 relative">
+
+        <CarouselSlide>
+            <div className="box-rectangle" onClick={() => { router.push('/dashboard') }}></div>
+            <div className="box-rectangle"></div>
+            <div className="box-rectangle"></div>
+            <div className="box-rectangle"></div>
+            <div className="box-rectangle"></div>
+            <div className="box-rectangle"></div>
+            <div className="box-rectangle"></div>
+        </CarouselSlide>
+        <div className="absolute m-screen text-gray-300 "><h1 className="">Abverties layout.</h1>  </div>
+
 
     </div>
 }

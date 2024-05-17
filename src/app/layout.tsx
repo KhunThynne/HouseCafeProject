@@ -15,15 +15,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
- 
+
     <html lang="en">
-   
-        <body className={inter.className}>
+      <head>
+        <script src="http://192.168.1.3:8097"></script>
+      </head>
+      <body className={inter.className}>
 
-          {children}
+        {children}
 
-        </body>
-   
-    </html>  
+      </body>
+
+    </html>
   );
 }

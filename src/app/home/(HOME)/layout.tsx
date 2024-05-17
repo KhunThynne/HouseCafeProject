@@ -15,7 +15,7 @@ export default function HomeLayout({ children, Abverties, Products, Menu }: Home
 
     return (
 
-        <div className="grid grid-rows-[30%,1fr]  md:grid-cols-[18%,1fr] gap-3 container mx-auto border h-full "  >
+        <div className="grid grid-rows-[250px,1fr]  md:grid-cols-[18%,1fr] gap-3 container mx-auto border h-full "  >
 
             {/* <Link href={`/dashboard`} >D</Link>
         <a href="/dashboard">D</a> */}

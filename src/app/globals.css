@@ -1,9 +1,11 @@
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "tailwindcss/variants";
 /* custom css */
 @import "./theme.css";
+@import "@/components/component.css";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -33,11 +35,11 @@ body {
 
 @layer base {
   h1 {
-    @apply text-2xl;
+    @apply text-4xl;
   }
 
   h2 {
-    @apply text-xl;
+    @apply text-3xl;
   }
 
   h3 {
@@ -62,7 +64,9 @@ body {
   /* .test {
     @apply text-primary
   } */
-
+  .box-rectangle {
+    @apply border border-primary min-w-[200px] h-full
+  }
 }
 
 @layer utilities {
@@ -108,5 +112,10 @@ body {
     }
   } */
 
-
+  .m-screen {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
 }

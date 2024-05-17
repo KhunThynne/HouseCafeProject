@@ -1,5 +1,3 @@
-import Container from "@/components/Container";
-import HomeDetail from "@/components/Home/HomeDetail";
 
 
 export default function Home() {
