@@ -16,7 +16,7 @@ export default function ProductPage() {
 
     return <div className="border Products relative">
 
-        <div className="h-screen">Tsd</div>
+  
         <div className="absolute m-screen text-gray-300 "><h1 className="">Products layout.</h1>  </div>
 
     </div>

@@ -8,7 +8,7 @@ interface MainContentProps {
 
 const MainContent: React.FunctionComponent<MainContentProps> = ({ children, className }) => {
     // Component logic
-    return <main className={`${className}  border`}>
+    return <main className={`${className}  `}>
 
         {children}
     </main>;

@@ -1,10 +1,15 @@
+import Cart from "./CouterBar/Cart";
 
 
 export default function Navbar() {
     return (
-        <nav className=" sticky  top-0 bg-[#f3f3f3] flex justify-center items-center shadow relative">
-            <div className="absolute m-screen text-gray-300 "><h2 className="">Navbar layout.</h2>  </div>
+        <div className="sticky  top-0  bg-white shadow z-20">
+            <nav className=" relative flex justify-between items-center  container mx-auto   px-3  h-full">
+                <div>Manu</div>
+                <Cart></Cart>
 
-        </nav>
+
+                <div className="absolute m-screen text-gray-300 z-[-99]"><h2 className="">Navbar layout.</h2>  </div>
+            </nav> </div>
     );
 }
