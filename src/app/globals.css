@@ -21,17 +21,7 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  /* background-color: rgb(255, 255, 255); */
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
-  background-color: #f3f3f3;
-}
+
 
 @layer base {
   h1 {
@@ -70,8 +60,14 @@ body {
 }
 
 @layer utilities {
+
+  body {
+    @apply text-[​#252525] bg-gray-100
+  }
+
   .text-balance {
     text-wrap: balance;
+    color: rgb(37, 37, 37)
   }
 
   /* Not found */
