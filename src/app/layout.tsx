@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import Script from 'next/script'
+import Script from 'next/script'
 
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -20,7 +20,7 @@ export default function RootLayout({
 
     <html lang="en">
       <head>
-        {/* <Script src="http://localhost:8097"></Script> */}
+        <Script src="http://localhost:8097"></Script>
       </head>
       <body className={inter.className}>
 
