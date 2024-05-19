@@ -1,4 +1,4 @@
-@tailwind components;
+@import "tailwindcss/components";
 @tailwind base;
 
 
@@ -34,7 +34,7 @@
 
     .bg-primary,
     .bg-danger {
-        @apply text-white
+        @apply !text-white
     }
 
 
