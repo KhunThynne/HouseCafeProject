@@ -13,10 +13,12 @@ export default function CarouselSlide({ children }: CarouselSlideType) {
     const eventHandlers = createEventHandlers(documentRef);
 
     return (
-        <div className="grid grid-cols-[50px,1fr,50px] h-full gap-x-5" ref={documentRef}>
+        <div className="grid grid-cols-[50px,1fr,50px] h-full gap-x-5 " ref={documentRef}>
             <div className="order-1 self-center flex justify-end"><FaChevronLeft /></div>
             <div className="order-3 self-center flex justify-start"><FaChevronRight /></div>
-            <div className="order-2 h-full flex gap-2 overflow-hidden carousel-container "  {...eventHandlers}>
+            <div className="order-2 h-full flex gap-2 overflow-hidden carousel-container "  {...eventHandlers}
+            
+            >
 
                 {children}
 

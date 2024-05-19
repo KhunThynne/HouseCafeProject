@@ -56,13 +56,13 @@ const config: Config = withMT({
           night: "#0c2c70",
         },
         'secondary': {
-          DEFAULT: "#fff"
+          DEFAULT: "#5a5a5a"
         },
         'danger': {
           DEFAULT: "#f71b1b"
         },
         'warning': {
-          DEFAULT: ""
+          DEFAULT: "#faa507"
         },
         'info': {
           DEFAULT: ""

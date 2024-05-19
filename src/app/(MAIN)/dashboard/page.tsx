@@ -1,6 +1,10 @@
 
 
-export default function DashboardPage() {
+
+
+
+
+export default function DashboardPage({ Test, children }: { Test: React.ReactNode, children: React.ReactNode }) {
 
 
 
@@ -9,7 +13,7 @@ export default function DashboardPage() {
 
         <div className="flex justify-center ">
             <span>      DashboardPage </span>
-
+          
         </div>
 
 

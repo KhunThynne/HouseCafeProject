@@ -3,6 +3,8 @@ import Script from 'next/script'
 
 import { Inter } from "next/font/google";
 import "./globals.css";
+import GridLayout from "@/components/GridLayout";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,17 +17,19 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
+  // readonly children: React.ReactNode;
 }>) {
   return (
 
     <html lang="en">
       <head>
-        <Script src="http://localhost:8097"></Script>
+        {/* <Script src="http://localhost:8097"></Script> */}
       </head>
       <body className={inter.className}>
-
-        {children}
-
+        <GridLayout>
+     
+          {children}
+        </GridLayout>
       </body>
 
     </html>

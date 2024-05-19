@@ -6,12 +6,13 @@ interface HomeLayoutType {
     Abverties: ReactNode
     Products: ReactNode
     Menu: ReactNode
+    Cart:ReactNode
 }
 
 
 
 
-export default function HomeLayout({ children, Abverties, Products, Menu }: HomeLayoutType) {
+export default function HomeLayout({ children,Cart, Abverties, Products, Menu }: HomeLayoutType) {
 
     return (
 
@@ -23,7 +24,7 @@ export default function HomeLayout({ children, Abverties, Products, Menu }: Home
             {Abverties}
             {Products}
 
-
+      
 
             {/* {children} */}
 

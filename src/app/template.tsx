@@ -19,12 +19,12 @@ export default function Template({ children }: { children: React.ReactNode }) {
  */}
 
 
-            <GridLayout>
-                <Navbar />
-                <MainContent className="  ">{children}</MainContent>
+
+            <Navbar />
+            <MainContent className="  ">{children}</MainContent>
 
 
-            </GridLayout>
+
 
 
 

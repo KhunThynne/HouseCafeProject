@@ -61,13 +61,34 @@
 
 @layer utilities {
 
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
   body {
-    @apply text-[​#252525] bg-gray-100
+    @apply text-[​#535353] bg-gray-100
   }
 
   .text-balance {
     text-wrap: balance;
-    color: rgb(37, 37, 37)
+    color: rgb(37, 37, 37);
+
   }
 
   /* Not found */

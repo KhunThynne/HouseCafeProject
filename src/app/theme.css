@@ -33,7 +33,8 @@
 
 
     .bg-primary,
-    .bg-danger {
+    .bg-danger,
+    .bg-warning {
         @apply !text-white
     }
 
